@@ -1,0 +1,342 @@
+/* Para todos los archivos */
+
+/* Este ya no lo ocupo por que solo fue para hacer una de las entregas 
+   y para darme una idea de como deberia quedar mi pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F2EF;
+}
+
+.titulo{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nav{
+    background-color: #D0F2FD;
+    border: 5px solid #000;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+.nav>ul>li{
+    background-color: #D0F2FD;
+    display: inline;
+    list-style: none;
+    padding-left: 200px;
+}
+
+
+.a{
+  text-decoration: none;
+}
+
+.footer{
+    background-color: #D0F2FD;
+    border: 5px solid #000;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    padding: 10px;
+}
+
+.footer>ul>li{
+    display: inline;
+    list-style: none;
+    margin-left: 500px;
+}
+
+.a1{
+    text-decoration: none;
+}
+
+/* index.html */
+
+.article1{
+    text-align: center
+
+}
+
+.titulo2{
+    background-color: #fff;
+    color: #D55672;
+    display: inline-block;
+    padding: 50px;
+    margin: 30px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.parrafo1{
+    background-color: #fff;
+    color: #000;
+    padding: 40px;
+    margin: 30px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.imagenes{
+    text-align: center;
+    margin: 50px;
+}
+
+/* maquinas.html */
+
+.header{
+    text-align: center;
+}
+
+.subtitulo1{
+    background-color: #fff;
+    color: #D55672;
+    display: inline-block;
+    padding: 50px;
+    margin: 30px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.maquinas{
+    text-align: center;
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.maquinas0{
+    background-color: #CEC8C8;
+    margin: 20px;
+}
+
+.h3_1{
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.recta{
+    padding: 20px;
+    margin: 10px;
+}
+
+.recta1>a{
+    text-decoration: none;
+    padding-right: 30px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 30px;
+}
+
+.maquinas1{
+    background-color: #CEC8C8;
+    margin: 20px;
+}
+
+.doble{
+    padding: 20px;
+    margin: 10px;
+}
+
+.doble1>a{
+    text-decoration: none;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.maquinas2{
+    background-color: #CEC8C8;
+    margin: 20px;
+}
+
+.presilla{
+    padding: 20px;
+    margin: 10px;
+}
+
+.presilla1>a{
+    text-decoration: none;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.maquinas3{
+    background-color: #CEC8C8;
+    margin: 20px;
+}
+
+.over{
+    padding: 20px;
+    margin: 10px;
+}
+
+.over1>a{
+    text-decoration: none;
+    font-family: 'Inter' sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* servicios.html */
+
+.section1{
+    font-family: 'Inter' sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: 30px
+}
+
+.subtitulo2{
+    background-color: #fff;
+    color: #D55672;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.p{
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+
+.Section1{
+    border: 2px solid #000;
+    margin: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.article2{
+    background-color: #fff;
+    font-family: 'Inter' sans-serif;
+}
+
+.h3_2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #D55672;
+    padding: 20px 0;
+}
+   
+
+.p1{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.a4{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 15px;
+    border: 1.5px solid black;
+}
+
+/* acerca.html */
+
+.article3{
+    font-family: 'Inter' sans-serif;
+    background-color: #fff;
+    margin: 30px;
+    text-align: center;
+}
+
+.subtitulo3{
+    color: #D55672;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.parrafo2{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+/* contacto.html */
+.section2{
+    background-color: #fff;
+    font-family: 'Inter' sans-serif;
+    text-align: center;
+}
+
+.subtitulo4{
+    color: #D55672;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.parrafo3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.formulario{
+    background-color: #fff;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 40px;
+    margin: 20px;
+    border: 3px solid black;
+}
+
+#nombre{
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+
+#tel{
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+
+#email{
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+
+.select1{
+    background-color: #D9D9D9;
+    font-size: 20px;
+} 
