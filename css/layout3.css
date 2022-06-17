@@ -33,7 +33,7 @@
     font-family: 'Open Sans' sans-serif;
     font-size: 15px; 
     text-transform: uppercase;
-    background-color: #eee;
+    background-image: linear-gradient(#edd51d, #dd8f5b);
     color: #000;
 }
 
@@ -141,7 +141,7 @@ a:hover{
     line-height: 70px;
     font-size: 20px;
     font-family: 'Inter' sans-serif;
-    background-color: #b4b1b1;
+    background-image: linear-gradient(#f72585, #3a0ca3);
     color: #fff;
     
 }

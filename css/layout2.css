@@ -33,7 +33,7 @@
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #eee;
+    background-image: linear-gradient(#edd51d, #dd8f5b);
     color: #000;
 }
 
@@ -106,7 +106,8 @@ a:hover{
 
     font-family: 'Inter' sans-serif;
     font-size: 30px;
-    background-color: #b4b1b1;
+    background-image: linear-gradient(#f72585, #3a0ca3);
+    color: #fff;
     padding: 10px;
 }
 
