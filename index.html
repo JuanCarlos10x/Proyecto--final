@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquinas de coser Don Gato</title>
 
+  <!-- boostrap -->
+  <!-- css only -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+  crossorigin="anonymous"
+/>
+<!-- css only -->
     <!-- Links -->
     <link rel="stylesheet" href="css/layout.css" />
     <link
@@ -19,66 +28,113 @@
     <!-- fin de los links -->
   </head>
   <body>
-    <div class="grid">
-      <!-- cabecera de la pagina -->
-      <header class="header">
-        <!-- logo de la pagina -->
-        <h1 class="logo">Maquinas de coser Don Gato</h1>
-        <!-- Fin del logo  -->
-      </header>
+    <div class="container border">
+      <div class="row">
+        <!-- inicio de la cabecera -->
+        <header class="header col-12 text-white p-4">
+          <h1>Maquinas de coser Don Gato</h1>
+        </header>    
       <!-- fin de la cabecera -->
+
       <!-- barra de navehacion  -->
-      <nav class="menu">
-        <ul>
-          <li><a href="./../index.html">Inicio</a></li>
-          <li><a href="./pages/maquinas.html">Maquinas</a></li>
-          <li><a href="./pages/servicios.html">Servicios</a></li>
-          <li><a href="./pages/acerca.html">Acerca de</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- fin de la barra de negacion -->
+      <nav class="navbar navbar-expand-lg
+      col-12 ">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="#"></a>
+         <button
+           class="navbar-toggler"
+           type="button"
+           data-bs-toggle="collapse"
+           data-bs-target="#navbarNav"
+           aria-controls="navbarNav"
+           aria-expanded="false"
+           aria-label="Toggle navigation"
+         >
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav">
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/maquinas.html">Maquinas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/acerca.html">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- fin de la barra de negacion -->
 
       <!-- informacion de la pagina  -->
-      <section class="contenido">
-        <article class="article_1">
-          <h2 class="h2">Arma tu taller</h2>
-        </article>
+      <section id="content" class="col-12">
+        <div class="row">
+          <section id="informacion" class="col-12 border caja">
+            <h2>Arma tu taller</h2>
+            <p>¡Te ayudamos a armar, actualizar o renovar tu taller!</p>
+          </section>
 
-        <article class="article_2">
-          <p class="parrafo1">
-            ¡Te ayudamos a armar, actualizar o renovar tu taller!
-          </p>
-        </article>
+          <article class="col-12 border slider">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/slider.jpg"
+                    class="d-block w-100 h-90px"
+                    alt="taller de costura"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/slider2.jpg"
+                    class="d-block w-100"
+                    alt="taller de costura"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./assets/slider3.jpg"
+                    class="d-block w-100"
+                    alt="taller de costura"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
-
-      <aside class="aside">
-        <h2>Talleres</h2>
-
-        <article class="imagenes">
-          <img
-            src="./assets/descarga.jpg"
-            alt="Taller de costura"
-            class="img2"
-          />
-          <img
-            src="./assets/taller2.jpg"
-            width="310px"
-            height="163px"
-            alt="taller de costura"
-          />
-        </article>
-      </aside>
-
       <!-- fin de la informacion, voy a integrar algunas imagenes y un poco mas de informacion  -->
-
       <!-- footer -->
-      <footer class="footer">
+      <footer class="col-lg-12">
         <ul>
-          <li><a href="./pages/acerca.html">Acerca de</a></li>
-          <li><a href="./pages/contacto.html ">Contacto</a></li>
+          <li class="col"><a href="./acerca.html">Acerca de</a></li>
+          <li class="col"><a href="./contacto.html">Contacto</a></li>
         </ul>
       </footer>
     </div>
+  </div>
+      <!-- fin del footer -->
+
+     <!-- JavaScript Bundle with Popper -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+     crossorigin="anonymous"
+   ></script>
   </body>
 </html>
