@@ -1,261 +1,51 @@
-/* este es para la pagina maquinas.html */
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 150px 70px 1fr 70px;
-    grid-template-areas: 
-    "header header header header header"
-    "menu menu menu menu menu"
-    "aside contenido contenido contenido contenido"
-    "footer footer footer footer footer";
-
-    grid-gap: 20px;
-
-    width: 90%;
-    height: 1570px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-}
-
-.grid .header{
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Open sans' sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background-image: linear-gradient(#edd51d, #dd8f5b);
-    color: #000;
-}
-
-.grid .menu{
-    grid-area: menu;
-    background-color: #d0f2fd;
-    color: #000;
-    line-height: 70px;
-}
-
-.grid .menu ul{
-    display: flex;
-    justify-content: space-evenly;
+.container ul{
     list-style: none;
-    font-family: 'Inter' sans-serif;
-    font-size: 20px;
 }
 
 li>a{
     text-decoration: none;
+    
+    margin: 10px;
 }
 
-a:hover{
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    transition: .4s;
+.header{
+    text-align: center;
+    background-image: linear-gradient(#edd51d, #dd8f5b);
 }
 
-.grid .contenido{
-    grid-area: contenido;
+.navbar{
+    background: #D0F2FD;
+    color: #000;
+    font-weight: 500;
+}
+
+.products h2{
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
-}
-
-.grid .maquinas article{
-     border:  1px solid #000;
-     border-radius: 20px;
-     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 30%);
-     padding: 10px;
-     margin: 10px;
- }
-
-.grid .maquinas h3{
-    font-size: 20px;
-    text-align: center;
-    color: #D55672;
-}
-
-.grid .maquinas ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
     justify-content: space-between;
-    list-style: none;
-    font-family: 'Inter' sans-serif;
-    font-size: 20px;
-    padding-left: 15px;
 }
 
-.grid .aside{
-    grid-area: aside;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Inter' sans-serif;
-    font-size: 30px;
-    background-image: linear-gradient(#f72585, #3a0ca3);
-    color: #fff;
-    padding: 10px;
-}
-
-
-.grid .footer{
-    grid-area: footer;
-    background-color: #D0F2FD;
+footer{
+    background: #D0F2FD;;
     color: #000;
-    line-height: 70px;
+    font-weight: 500;
 }
 
-.grid .footer ul{
+footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 20px;
+    text-align: center;
     list-style: none;
 }
 
-/* aqui van los media */
-
-@media (max-width: 1200px){
-
-    .grid .maquinas ul{
-        font-size: 18px;
-    }
-
-    .grid .aside{
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 1000px){
-
-    .grid .aside{
-        font-size: 26px;
-    }
-}
-
-@media (max-width: 800px){
-
-    .grid .maquinas h3{
-        font-size: 18px;
-    }
-
-    .grid .menu ul{
-        font-size: 16px;
-    }
-
-    img{
-        width: 190px;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 700px){
-
-    .grid .header{
-        font-size: 13px;
-    }
-
-    .grid .aside{
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 650px){
-
-    .grid .maquinas h3{
-        font-size: 16px;
-    }
-
-    .grid .maquinas ul{
-        font-size: 14px;
-    }
-
-    .grid .aside{
-        font-size: 22px;
-    }
-
-    img{
-        margin: 15px;
-    }
-}
-
-@media (max-width: 500px){
-
-    .grid .header{
-        font-size: 11px;
-    }
-
-    .grid .aside{
-    
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 491px){
-
-    .grid .header{
-        font-size: 9px;
-    }
-
-    .grid .menu ul{
-        font-size: 14px;
-    }
-    
-    .grid .maquinas h3{
-
-        font-size: 14px;
-
-    }
-    .img{
-        width: 160px;
-        margin: 15px;
-    }
-
-    .grid .aside{
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 430px){
-
-    img{
-        width: 100px;
-        margin: 20px;
-    }
-
-    .grid .aside{
-        grid-area: 1 span 5;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 390px){
-
-    .grid .maquinas ul{
-        font-size: 12px;
-    }
-
-    img{
-        width: 70px;
-        margin-bottom: 30px;
-    }
-
-    .grid .aside{
-        font-size: 12px;
-    }
+footer li>a{
+    text-decoration: none;
 
 }

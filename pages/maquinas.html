@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquinas de coser Don Gato</title>
 
+    <!-- css only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- css onLY -->
     <!-- Links -->
     <link rel="stylesheet" href="../css/layout2.css" />
     <link
@@ -20,177 +28,150 @@
   </head>
 
   <body>
-    <div class="grid">
-      <!-- cabecera de la pagina -->
-      <header class="header">
-        <!-- logo de la pagina -->
-        <h1 class="logo">Maquinas de coser Don Gato</h1>
+   <div class="container border">
+    <div class="row">
+      <!-- cabecera -->
+      <header class="header col-12 text-white p-4">
+        <h1>Maquinas de coser Don Gato</h1>
       </header>
       <!-- fin de la cabecera -->
-
-      <!-- barra de navegacion  -->
-      <nav class="menu">
-        <ul>
-          <li><a href="./../index.html">Inicio</a></li>
-          <li><a href="./maquinas.html">Maquinas</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./acerca.html">Acerca de</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- fin de la barra de negacion -->
-
-      <!-- informacion de maquinas -->
-      <!-- voy agregar links a paginas externas donde se puedan ver estos productos -->
-
-      <div class="contenido">
-        <section class="maquinas">
-          <article class="recta">
-            <h3 class="h3">Maquinas rectas</h3>
-            <img src="./../assets/recta.jpg" alt="maquina-recta" class="img" />
-
-            <ul>
-              <li>
-                <a
-                  href="https://listado.mercadolibre.com.mx/maquinas-de-coser-industriales-hercules-nuevas?matt_tool=30746554&matt_word=&matt_source=google&matt_campaign_id=15594697613&matt_ad_group_id=131573508135&matt_match_type=&matt_network=g&matt_device=c&matt_creative=569977482843&matt_keyword=&matt_ad_position=&matt_ad_type=&matt_merchant_id=&matt_product_id=&matt_product_partition_id=&matt_target_id=aud-1724674524957:dsa-1456167871416&gclid=CjwKCAjwkMeUBhBuEiwA4hpqEDsUfGjeVqRoU2rnW5By_TygxCWo-MP52Or0q5PsWl1vmbOX06Z19hoCkfoQAvD_BwE"
-                  target="_blank"
-                  >Hercules</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.lidermaq.com/maquinas/2/rectas-electronicas"
-                  target="_blank"
-                  >JUKY</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.tiendaenlinea.casadiaz.com.mx/maquinas-recta"
-                  target="_blank"
-                  >Brother</a
-                >
-              </li>
-            </ul>
-          </article>
-          <!-- </section> -->
-
-          <!-- <section class="maquinas1"> -->
-          <article class="doble">
-            <h3 class="h3">Maquinas recta doble aguja</h3>
-            <img
-              src="./../assets/doble.jpg"
-              alt="maquina-doble-aguja"
-              class="img"
-            />
-
-            <ul>
-              <li>
-                <a
-                  href="https://casadiaz.com.mx/articulo/1/maquinas-de-coser-industriales/110/rectas-2-agujas"
-                  target="_blank"
-                  >Brother</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.lidermaq.com/maquinas/4/rectas-2-agujas"
-                  target="_blank"
-                  >JUKY</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://labobina.cr/?product_cat=&s=MAQUINA+DOBLE+AGUJA&post_type=product"
-                  target="_blank"
-                  >La Bobina</a
-                >
-              </li>
-            </ul>
-          </article>
-          <!-- </section> -->
-
-          <!-- <section class="maquinas2"> -->
-          <article class="presilla">
-            <h3 class="h3">Maquinas presilladora</h3>
-            <img
-              src="./../assets/presilla.jpg"
-              alt="maquina-presilladora"
-              class="img"
-            />
-
-            <ul>
-              <li>
-                <a
-                  href="https://www.casarizo.com/maquina-presilladora"
-                  target="_blank"
-                  >Rizo</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://casadiaz.com.mx/articulo/1/maquinas-de-coser-industriales/3/presilladoras"
-                  target="_blank"
-                  >Diaz</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://listado.mercadolibre.com.mx/maquina-presilladora"
-                  target="_blank"
-                  >Mercado Libre</a
-                >
-              </li>
-            </ul>
-          </article>
-          <!-- </section> -->
-
-          <!-- <section class="maquinas3"> -->
-          <article class="over">
-            <h3 class="h3">Maquinas overlock</h3>
-            <img
-              src="./../assets/over.jpg"
-              alt="maquina-overlock"
-              class="img"
-            />
-
-            <ul>
-              <li>
-                <a
-                  href="https://www.tiendaenlinea.casadiaz.com.mx/overlock"
-                  target="_blank"
-                  >Diaz</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.casarizo.com/maquina-overlock-industrial-"
-                  target="_blank"
-                  >Rizo</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://listado.mercadolibre.com.mx/maquina-overlock"
-                  target="_blank"
-                  >Mercado Libre</a
-                >
-              </li>
-            </ul>
-          </article>
-        </section>
+      <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg 
+    col-12">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="-nav-item">
+              <a
+              class="nav-link active"
+              aria-current="page" 
+              href="./../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./maquinas.html">Maquinas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./acerca.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </li>
+          </ul>
+        </div>
       </div>
+      </nav>
+    <!-- fin de la barra de navegacion -->
+    <!-- informacion sobre los productos -->
+      <section class="content col-12">
+        <section class="products col-12">
+            <h2>Maquinas Industriales</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="./../assets/recta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maquina Recta</h5>
+                      <ul>
+                        <li><a class="link-info" href="https://listado.mercadolibre.com.mx/maquinas-de-coser-industriales-hercules-nuevas?matt_tool=30746554&matt_word=&matt_source=google&matt_campaign_id=15594697613&matt_ad_group_id=131573508135&matt_match_type=&matt_network=g&matt_device=c&matt_creative=569977482843&matt_keyword=&matt_ad_position=&matt_ad_type=&matt_merchant_id=&matt_product_id=&matt_product_partition_id=&matt_target_id=aud-1724674524957:dsa-1456167871416&gclid=CjwKCAjwkMeUBhBuEiwA4hpqEDsUfGjeVqRoU2rnW5By_TygxCWo-MP52Or0q5PsWl1vmbOX06Z19hoCkfoQAvD_BwE"
+                          target="_blank">Hercules</a></li>
 
-      <aside class="aside">
-        <h2 class="h2">Maquinas</h2>
-      </aside>
-      <!-- footer -->
-      <footer class="footer">
-        <ul>
-          <li><a href="./acerca.html">Acerca de</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </footer>
+                          <li><a class="link-info" href="https://www.lidermaq.com/maquinas/2/rectas-electronicas"
+                            target="_blank">JUKY</a></li>
+
+                        <li><a class="link-info" href="https://www.tiendaenlinea.casadiaz.com.mx/maquinas-recta"
+                          target="_blank">Brother</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./../assets/doble.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maquina Recta Doble Aguja</h5>
+                       <ul>
+                        <li><a class="link-info" href="https://casadiaz.com.mx/articulo/1/maquinas-de-coser-industriales/110/rectas-2-agujas"
+                          target="_blank">Brother</a></li>
+
+                        <li><a class="link-info" href="https://www.lidermaq.com/maquinas/4/rectas-2-agujas"
+                          target="_blank">JUKY</a></li>
+
+                        <li><a class="link-info" href="https://labobina.cr/?product_cat=&s=MAQUINA+DOBLE+AGUJA&post_type=product"
+                          target="_blank">La Bobina</a></li>
+                       </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./../assets/presilla.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maquina Presilladora</h5>
+                      <ul>
+                        <li><a class="link-info" href="https://www.casarizo.com/maquina-presilladora"
+                          target="_blank">Casa Rizo</a></li>
+                        <li><a class="link-info" href="https://casadiaz.com.mx/articulo/1/maquinas-de-coser-industriales/3/presilladoras"
+                          target="_blank">Casa Diaz</a></li>
+                        <li><a class="link-info" href="https://listado.mercadolibre.com.mx/maquina-presilladora"
+                          target="_blank">Mercado Libre</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./../assets/over.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Maquina Overlock</h5>
+                      <ul>
+                        <li><a class="link-info" href="https://www.tiendaenlinea.casadiaz.com.mx/overlock"
+                          target="_blank">Casa Diaz</a></li>
+
+                        <li><a class="link-info" href="https://www.casarizo.com/maquina-overlock-industrial-"
+                          target="_blank">Casa Rizo</a></li>
+
+                        <li><a class="link-info" href="https://listado.mercadolibre.com.mx/maquina-overlock"
+                          target="_blank">Mercado Libre</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </section>
+    </section>
+    <!-- fin de la informacion -->
+<!-- footer -->
+    <footer class="col-lg-12">
+      <ul>
+        <li class="col"><a href="./acerca.html">Acerca de</a></li>
+        <li class="col"><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </footer>
+<!-- fin del footer -->
     </div>
+   </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
