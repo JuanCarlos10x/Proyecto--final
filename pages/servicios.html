@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquinas de coser Don Gato</title>
-
+    <!-- css only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- css onLY -->
     <!-- links -->
     <link rel="stylesheet" href="../css/layout3.css" />
     <link
@@ -19,112 +26,125 @@
     <!-- fin de los links -->
   </head>
   <body>
-    <!-- ingresar al grid -->
-    <div class="grid">
-      <!-- cabecera de la pagina -->
-      <header class="header">
-        <!-- logo de la pagina -->
-        <h1 class="logo">Maquinas de coser Don Gato</h1>
+    <div class="container">
+      <!-- inicio de la cabecera -->
+      <header class="header col-12 text-white p-4">
+        <h1>Maquinas de coser Don Gato</h1>
       </header>
-      <!-- fin de la cabecera -->
-      <!-- barra de navehacion  -->
-      <nav class="menu">
-        <ul>
-          <li><a href="./../index.html">Inicio</a></li>
-          <li><a href="./maquinas.html">Maquinas</a></li>
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./acerca.html">Acerca de</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- fin de la barra de negacion -->
+      <!-- fin de la cabcera -->
+      <!-- barra de navegacion -->
+      <nav class="navbar navbar-expand-lg 
+      col-12">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a 
+                class="nav-link"
+                aria-current="page"
+                href="./../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./maquinas.html">Maquinas</a>
+              </li>
 
-      <!-- Informacion de los servicios -->
-      <section class="aside">
-        <h2 class="h2">Rafacciones y Mantenimiento</h2>
-        <p class="p">
-          Sabemos que ninguna maquina es perfecta, pero contamos con refacciones
-          originales de cada maquina
-        </p>
-      </section>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
 
-      <section class="contenido">
-        <article class="article1 article">
-          <h2 class="h2">Mantenimiento</h2>
-          <p class="p">
-            Visita estos links para que encuentres a los mejores tecnicos:
-          </p>
+              <li class="nav-item">
+                <a class="nav-link" href="./acerca.html">Acerca de</a>
+              </li>
 
-          <ul>
-            <li>
-              <a
-                href="https://www.casadiaz.com.mx/servicio-tecnico"
-                class="a"
-                target="_blank"
-                >Casa Diaz</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.maquinasdecoserdioni.com/servicio-tecnico-reparacion-maquinas-coser"
-                class="a"
-                target="_blank"
-                >Dioni</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.reparacionmaquinasdecoserdf.com.mx/ "
-                class="a"
-                target="_blank"
-                >ALEIS SINGER</a
-              >
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
             </li>
           </ul>
-        </article>
+        </div>
+      </div>
+    </nav>
+      <!-- fin de la barra de navegacion -->
+      <!-- informacion -->
+      <div class="card">
+        <div class="card-header text-center">
+          <h2>Refacciones y Mantenimiento</h2>
+        </div>
+        <div class="card-body text-center">
+          <blockquote class="blockquote mb-0">
+            <p> Sabemos que ninguna maquina es perfecta, pero contamos con refacciones
+                originales de cada maquina</p>
+          </blockquote>
+        </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mantenimiento</h5>
+              <p class="card-text">Visita estos links para que encuentres a los mejores tecnicos:</p>
+              <a href="https://www.casadiaz.com.mx/servicio-tecnico"
+              class="a"
+              target="_blank" class="btn btn-primary">Casa Diaz</a>
 
-        <article class="article2 article">
-          <h2 class="h2">Rafacciones</h2>
-          <p class="p">
-            Vista estos links para que encuentres la pieza que necesitas:
-          </p>
+              <a href="https://www.maquinasdecoserdioni.com/servicio-tecnico-reparacion-maquinas-coser"
+              class="a"
+              target="_blank"class="btn btn-primary">Dioni</a>
 
-          <ul>
-            <li>
-              <a
-                href="https://listado.mercadolibre.com.mx/accesorios-para-maquinas-industriales#D[A:accesorios%20para%20maquinas%20industriales] "
-                class="a"
-                target="_blank"
-                >Mercado Libre</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.casadiaz.com.mx/articulo/9/refacciones/597/refacciones-maquinas-de-coser-industriales "
-                class="a"
-                target="_blank"
-                >Casa Diaz</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.lidermaq.com/refacciones-insumos "
-                class="a"
-                target="_blank"
-                >LIDERMAQ</a
-              >
-            </li>
-          </ul>
-        </article>
-      </section>
+              <a href="https://www.reparacionmaquinasdecoserdf.com.mx/ "
+              class="a"
+              target="_blank" class="btn btn-primary">ALEIS SINGER</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Refacciones</h5>
+              <p class="card-text">Vista estos links para que encuentres la pieza que necesitas:</p>
+              <a href="https://listado.mercadolibre.com.mx/accesorios-para-maquinas-industriales#D[A:accesorios%20para%20maquinas%20industriales] "
+              class="a"
+              target="_blank" class="btn btn-primary">Mercado Libre</a>
 
-      <!-- footer -->
-      <footer class="footer">
+              <a href="https://www.casadiaz.com.mx/articulo/9/refacciones/597/refacciones-maquinas-de-coser-industriales "
+              class="a"
+              target="_blank" class="btn btn-primary">Casa Diaz</a>
+
+              <a href="https://www.lidermaq.com/refacciones-insumos "
+              class="a"
+              target="_blank" class="btn btn-primary">LIDERMAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin de la informacion -->
+      <!-- footer  -->
+      <footer class="col-lg-12">
         <ul>
-          <li><a href="./acerca.html">Acerca de</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li class="col"><a href="./acerca.html">Acerca de</a></li>
+          <li class="col"><a href="./contacto.html">Contacto</a></li>
         </ul>
       </footer>
+      <!-- fin del footer -->
     </div>
+
+   
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script> 
   </body>
 </html>

@@ -1,271 +1,42 @@
-/* este es para la pagina servicios.html */
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 150px 70px 1fr 70px;
-    grid-template-areas: 
-    "header header header header header"
-    "menu menu menu menu menu"
-    "aside aside contenido contenido contenido"
-    "footer footer footer footer footer";
-
-    grid-gap: 20px;
-
-    width: 90%;
-    height: 1000px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-}
-
-.grid .header{
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Open Sans' sans-serif;
-    font-size: 15px; 
-    text-transform: uppercase;
-    background-image: linear-gradient(#edd51d, #dd8f5b);
-    color: #000;
-}
-
-.grid .menu{
-    grid-area: menu;
-    background-color: #d0f2fd;
-    color: #000;
-    line-height: 70px;
-}
-
-.grid .menu ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.container ul{
     list-style: none;
-    font-family: 'Inter' sans-serif;
-    font-size: 20px;
 }
 
 li>a{
     text-decoration: none;
 }
 
-a:hover{
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    transition: .4s;
-}
-
-.grid .contenido{
-    grid-area: contenido;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 15px;
-    padding: 15px;
-}
-
-.grid .article{
-    font-family: 'Inter' sans-serif;
-
+.header{
     text-align: center;
-    line-height: 70px;
-    background-color: #fff;
-    border: 1px solid #555;
-    border-radius: 20px;
+    background-image: linear-gradient(#edd51d, #dd8f5b);
 }
 
-.article .h2{
-    font-family: 'Inter' sans-serif;
-    font-size: 45px;
-    color: #d55672;
-    margin-top: 10px;
-}
-
-.article .p{
-    font-family: 'Inter' sans-serif;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-.grid .article ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    background-color: #d0f2fd;
-
-}
-
-.grid .article ul>li{
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Inter' sans-serif;
-    font-size: 20px;
-}
-.a:hover{
-    background-color: aqua;
-    color: #fff;
-    border: 1px solid #000;
-    border-radius: 20px;
-    transition: .4s;
-}
-
-.grid .article2{
-    font-family: 'Inter' sans-serif;
-
-    text-align: center;
-    line-height: 50px;
-    background-color: #fff;
-    border: 1px solid #555;
-    border-radius: 20px;
-}
-
-.grid .aside{
-    grid-area: aside;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    padding: 8px;
-    line-height: 70px;
-    font-size: 20px;
-    font-family: 'Inter' sans-serif;
-    background-image: linear-gradient(#f72585, #3a0ca3);
-    color: #fff;
-    
-}
-
-.grid .footer{
-    grid-area: footer;
-    background-color: #d0f2fd;
+.navbar{
+    background: #D0F2FD;
     color: #000;
-    line-height: 70px;
+    font-weight: 500;
 }
 
-.grid .footer ul{
+.card-header h2{
+    color: #D55672;
+    font-size: 30px;
+}
+
+footer{
+    background: #D0F2FD;
+    color: #000;
+    font-weight: 500;
+}
+
+footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 20px;
+    text-align: center;
     list-style: none;
 }
 
-/* aqui van los media */
+footer li>a{
+    text-decoration: none;
 
-@media (max-width: 1279px) {
-    
-    .grid .article h2{
-        font-size: 43px;
-    }
-
-    .grid .article p{
-        font-size: 23px;
-    }
-
-}
-
-@media (max-width: 1110px){
-    .grid{
-        height: 1050px;
-    }
-}
-
-@media (max-wdith: 769px){
-
-    .grid .contenido{
-        width: 1100px;
-    }
-
-    .grid .article h2{
-        font-size: 25px;
-    }
-
-    .grid .article p{
-        font-size: 15px;
-    }
-
-    .grid .article ul>li{
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 12px;
-    }
-
-    .grid .aside{
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 690px){
-    .grid{
-        height: 1500px;
-    }
-
-    .grid .header{
-        font-size: 15px;
-    }
-
-    .grid .article h2{
-        font-size: 35px;
-    }
-
-    .grid .article ul>li{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 590px){
-
-    .grid{
-        height: 1500px;
-    } 
-
-    .grid .header{
-        font-size: 12px;
-    }
-
-    .grid .menu ul{
-        font-size: 15px;
-    }
-
-    .grid .article h2{
-        font-size: 18px;
-    }
-
-    .grid .article p{
-        font-size: 15px;
-    }
-
-    .grid .article ul>li{
-        font-size: 12px;
-    }
-
-    .grid .aside{
-        font-size: 12px;
-        padding: 10px;
-    }
-} 
-
-@media (max-width: 400px){
-    .grid .header{
-        font-size: 9px;
-    }
-
-    .grid .menu ul{
-        font-size: 12px;
-    }
-
-    .grid .article ul>li{
-        font-size: 10px;
-    }
 }

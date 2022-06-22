@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquinas de coser Don Gato</title>
-
+     <!-- css only -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+     crossorigin="anonymous"
+   />
+   <!-- css onLY -->
     <!-- links -->
     <link rel="stylesheet" href="../css/layout5.css" />
     <link
@@ -19,105 +26,145 @@
     <!-- fin de los links -->
   </head>
   <body>
+    <div class="container border">
+      <div class="row">
+        <!-- inicio de la cabecera -->
+          <header class="header col-12 text-white p-4">
+              <h1>Maquinas de coser Don Gato</h1>
+          </header>
+          <!-- fin de la cabecera -->
+          <!-- barra de navegacion -->
+          <nav class="navbar navbar-expand-lg
+          col-12 ">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#"></a>
+             <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+             >
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                  class="nav-link active"
+                  aria-current="page" 
+                  href="./../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./maquinas.html">Maquinas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./acerca.html">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- fin de la barra de navegacion -->
+      <!-- formulario -->
+      <form class="row g-3 needs-validation" novalidate>
+        <h2 class="text-center col-12">Ingrese sus datos</h2>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Numero de Telefono</label>
+          <input type="number" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom04" class="form-label">Servicio</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Elegir...</option>
+            <option>Reparacion</option>
+            <option>Manteniiento</option>
+            <option>Accesorio</option>
+            <option>Ninguno</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Acepto los terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
 
-    <div class="grid">
-      <!-- cabecera de la pagina -->
-    <header class="header">
-      <!-- logo de la pagina -->
-      <h1 class="logo">Maquinas de coser Don Gato</h1>
-    </header>
-    <!-- fin de la cabecera -->
-    <!-- barra de navehacion  -->
-    <nav class="menu">
-      <ul>
-        <li><a href="./../index.html">Inicio</a></li>
-        <li><a href="./maquinas.html">Maquinas</a></li>
-        <li><a href="./servicios.html">Servicios</a></li>
-        <li><a href="./acerca.html">Acerca de</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <!-- fin de la barra de negacion -->
-
-    <div class="contenido">
-       <!-- cabera de contacto -->
-    
-       <h2 class="h2">Ingrese su Informacion</h2>
-
-       <!-- fin de la cabecera -->
-   
-       <!-- Formulario de contacto  -->
-       <div>
-         <form class="form">
-           <label for="name">Nombre</label>
-           <br />
-           <input
-             type="text"
-             name="nombre"
-             id="nombre"
-             placeholder="ingresa tu nombre"
-           />
-           
-           <!-- <br> -->
-           <label for="tel">Telefono</label>
-           <br />
-           <input
-             type="tel"
-             name="tel"
-             id="tel"
-             placeholder="numero de telefono"
-           />
-   
-           <!-- <br /> -->
-   
-           <label for="email">Email</label>
-           <br />
-           <input
-             type="email"
-             name="email"
-             id="email"
-             placeholder="ingresa tu correo"
-             />
-             
-             <!-- <br /> -->
-             
-             <label>Servicio que necesitas</label>
-             <br />
-             <select class="select1">
-               <option value="reparacion">Reparacion</option>
-             <option value="mantenimiento">Mantenimiento</option>
-             <option value="accesorio">Accesio</option>
-             <option value="no">No requiero ninguno</option>
-            </select>
-            
-            <br />
-            <label
-            >¿Quieres recibir informacion sobre nuevos marcas que se asocian con
-            nosotros?</label
-            >
-            <br />
-            <span>Si</span>
-            <input type="checkbox" name="aceptar" />
-            <span>Acepto los terminos y condiciones</span>
-            <input type="checkbox" name="aceptar" checked="checked" />
-          </form>
-        </fieldset>
-        
-        <!-- Fin del formulario -->
-        
+        <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                  Quiero recibir informacion sobre nuevas maquinas y ofertas
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      <!-- fin del formulario -->
+      <!-- inicio del footer -->
+      <footer class="col-lg-12 border-top">
+             <ul>
+              <li class="col"><a href="./acerca.html">Acerca de</a></li>
+              <li class="col"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+       </footer>
+       <!-- fin del footer -->
       </div>
-    </div>
-
-   
-    <!-- footer -->
-    <footer class="footer">
-      <ul>
-        <li><a href="./acerca.html">Acerca de</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </footer>
-    </div>
-
-    
+      </div>
+      <!-- JavaScript Bundle with Popper -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

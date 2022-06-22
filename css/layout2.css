@@ -4,7 +4,6 @@
 
 li>a{
     text-decoration: none;
-    
     margin: 10px;
 }
 
@@ -21,6 +20,7 @@ li>a{
 
 .products h2{
     text-align: center;
+    color: #D55672;
     border-bottom: 1px solid #000;
 }
 
@@ -47,5 +47,4 @@ footer ul{
 
 footer li>a{
     text-decoration: none;
-
 }
