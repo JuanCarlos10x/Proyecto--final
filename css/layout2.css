@@ -20,15 +20,17 @@ li>a{
 
 .products h2{
     text-align: center;
-    color: #D55672;
     border-bottom: 1px solid #000;
+    color: #D55672;
+    margin:10px
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.products ul>li{
+    font-size: 20px;
+}
+
+.products img{
+    border: 1px solid #000;
 }
 
 footer{
@@ -47,4 +49,5 @@ footer ul{
 
 footer li>a{
     text-decoration: none;
+
 }
