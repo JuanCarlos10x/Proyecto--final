@@ -1,0 +1,85 @@
+@import './colors';
+@import './font';
+@import './size';
+
+
+// para todos 
+header{
+    background-image: $titulo;
+
+    h1{
+        font-family: $font-title;
+        color: $titulo1;
+    }
+}
+
+nav{
+    background-color: $barra;
+}
+
+footer{
+    background-color: $barra;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+// index.html
+
+.content{
+
+    .caja{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 100px;
+    }
+
+    h2{
+        padding: 50px;
+        margin-top: 20px;
+        font-family: $font-content;
+        font-size: $contenido;
+        text-align: center;
+        color: $subtitulo;
+        border: 2px solid $border;
+
+    }
+
+    p{
+        padding: 30px;
+        margin-top: 20px;
+        font-family: $font-content;
+        text-align: center;
+        border: 2px solid $border;
+    }
+}
+
+// acerca de.html
+
+.card{
+
+    line-height: 50px;
+
+    h2{
+        margin-top: 15px;
+        font-family: $font-content;
+        font-size: $size-contenido;
+        color: $subtitulo;
+    }
+
+    p{
+        font-family: $font-content;
+        font-size: $size-contenido;
+    }
+}

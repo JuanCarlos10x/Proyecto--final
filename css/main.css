@@ -1,0 +1,65 @@
+header {
+  background-image: linear-gradient(#edd51d, #dd8f5b);
+}
+header h1 {
+  font-family: "Open ans" sans-serif;
+  color: #fff;
+}
+
+nav {
+  background-color: #D0F2FD;
+}
+
+footer {
+  background-color: #D0F2FD;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
+
+.content .caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 100px;
+}
+.content h2 {
+  padding: 50px;
+  margin-top: 20px;
+  font-family: "Inter" sans-serif;
+  font-size: #000;
+  text-align: center;
+  color: #d55672;
+  border: 2px solid #000;
+}
+.content p {
+  padding: 30px;
+  margin-top: 20px;
+  font-family: "Inter" sans-serif;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.card {
+  line-height: 50px;
+}
+.card h2 {
+  margin-top: 15px;
+  font-family: "Inter" sans-serif;
+  font-size: 30px;
+  color: #d55672;
+}
+.card p {
+  font-family: "Inter" sans-serif;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */

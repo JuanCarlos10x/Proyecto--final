@@ -1,0 +1,53 @@
+.container ul{
+    list-style: none;
+}
+
+li>a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.header{
+    text-align: center;
+    background-image: linear-gradient(#edd51d, #dd8f5b);
+}
+
+.navbar{
+    background: #D0F2FD;
+    color: #000;
+    font-weight: 500;
+}
+
+.products h2{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    color: #D55672;
+    margin:10px
+}
+
+.products ul>li{
+    font-size: 20px;
+}
+
+.products img{
+    border: 1px solid #000;
+}
+
+footer{
+    background: #D0F2FD;;
+    color: #000;
+    font-weight: 500;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+}
+
+footer li>a{
+    text-decoration: none;
+
+}
