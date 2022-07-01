@@ -10,6 +10,7 @@ header{
     h1{
         font-family: $font-title;
         color: $titulo1;
+        text-align: center;
     }
 }
 
@@ -49,7 +50,7 @@ footer{
         padding: 50px;
         margin-top: 20px;
         font-family: $font-content;
-        font-size: $contenido;
+        font-size: $size-titulo;
         text-align: center;
         color: $subtitulo;
         border: 2px solid $border;
@@ -60,6 +61,7 @@ footer{
         padding: 30px;
         margin-top: 20px;
         font-family: $font-content;
+        font-size: $size-contenido;
         text-align: center;
         border: 2px solid $border;
     }
