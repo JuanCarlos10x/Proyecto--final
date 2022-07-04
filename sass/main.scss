@@ -1,32 +1,26 @@
 @import './colors';
 @import './font';
 @import './size';
-
+@import './mixins';
+@import './maps';
+@import './extend';
 
 // para todos 
 header{
-    background-image: $titulo;
-
-    h1{
-        font-family: $font-title;
-        color: $titulo1;
-        text-align: center;
-    }
+    @include header;
 }
 
 nav{
-    background-color: $barra;
+    background-color: map-get($estilo, "background");
+    font-weight: map-get($estilo, "weight");
 }
 
 footer{
-    background-color: $barra;
+    background-color: map-get($estilo, "background");
+    font-weight: map-get($estilo, "weight");
 
     ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        text-align: center;
-        list-style: none;
+        @include ul;
     }
 
     a{
@@ -39,19 +33,13 @@ footer{
 .content{
 
     .caja{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 100px;
+        @include caja;
     }
 
     h2{
-        padding: 50px;
-        margin-top: 20px;
+        @include caja_h2;
         font-family: $font-content;
         font-size: $size-titulo;
-        text-align: center;
         color: $subtitulo;
         border: 2px solid $border;
 
@@ -72,6 +60,33 @@ footer{
     }
 }
 
+//maquinas.html
+
+.content_2{
+    h2{
+        @extend %sub;
+        border: 2px solid $border;
+    }
+
+    ul>li{
+        list-style: none;
+    }
+}
+
+//servicios.html
+
+.card-header{
+    h2{
+        @extend %sub;
+    }
+
+    p{
+        @extend %parrafo;
+        line-height: 70px;
+    }
+}
+
+
 // acerca de.html
 
 .card{
@@ -88,5 +103,13 @@ footer{
     p{
         font-family: $font-content;
         font-size: $size-contenido;
+    }
+}
+
+//contacto.html
+
+form{
+    h2{
+        @extend %sub;
     }
 }

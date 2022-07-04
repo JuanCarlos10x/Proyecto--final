@@ -1,0 +1,34 @@
+@mixin header {
+    background-image: linear-gradient(#edd51d, #dd8f5b);
+    color: #fff;
+    font-family: 'Open Sans' sans-serif;
+    text-align: center;
+}
+
+@mixin ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+}
+
+@mixin caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+@mixin caja_h2 {
+    padding: 50px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+@mixin caja_p {
+    padding: 30px;
+    margin-top: 20px;
+    align-items: center;
+}
