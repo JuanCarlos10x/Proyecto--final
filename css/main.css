@@ -94,6 +94,72 @@ footer a {
 
 /*# sourceMappingURL=main.css.map */
 
+/* media para la pagina index */
+
+@media (max-width: 600px){
+  .content p{
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 500px){
+  .content h2{
+    padding: 30px;
+    font-size: 35px;
+  }
+  .content p{
+    padding: 30px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 400px){
+  .content h2{
+    padding: 25px;
+    font-size: 30px;
+  }
+  .content p{
+    padding: 25px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 300px){
+  .content h2{
+    padding: 20px;
+    font-size: 23px;
+  }
+  .content p{
+    padding: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 250px){
+  .content h2{
+    padding: 15px;
+    font-size: 20px;
+  }
+  .content p{
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 200px){
+  .content h2{
+    padding: 12px;
+    font-size: 15px;
+  }
+  .content p{
+    padding: 12px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+
 /* media para ajustes en las paginas acerca de y servicios */
 
 @media (max-width: 800px){
