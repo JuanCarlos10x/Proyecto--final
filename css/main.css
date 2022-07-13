@@ -94,7 +94,7 @@ footer a {
 
 /*# sourceMappingURL=main.css.map */
 
-/* media para ajustes  */
+/* media para ajustes en las paginas acerca de y servicios */
 
 @media (max-width: 800px){
   .card h2{
@@ -129,14 +129,24 @@ footer a {
   }
 }
 
+/* esta media es para la pagina de servicios es un ajuste en las tarjetas  */
+
+@media (max-width: 240px){
+  .card-body h5{
+    font-size: 14px;
+  }
+}
+
+/* aqui continua para la pagina de acerca de  */
+
 @media (max-width: 200px){
   .card{
     line-height: 20px;
   }
   .card h2{
-    font-size: 10px;
+    font-size: 15px;
   }
   .card p{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
