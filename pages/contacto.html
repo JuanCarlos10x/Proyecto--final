@@ -80,23 +80,24 @@
       </nav>
       <!-- fin de la barra de navegacion -->
       <!-- formulario -->
-      <form class="row g-3 needs-validation m-0 auto" novalidate>
-        <h2 class="text-center col-12 border">Ingrese sus datos</h2>
-        <div class="col-md-4">
+      <form class="form row g-3 needs-validation m-0 auto" novalidate>
+        <h2 class="text-center col-12">Ingrese sus datos</h2>
+        <p class="text-center col-12">Para más información y cotización de servicio puedes solicitarlo a través del siguiente formulario de contacto.</p> 
+        <div class="col-md-6">
           <label for="validationCustom01" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+        <div class="form-group col-md-6" >
+          <label for="validationCustomUsername" class="form-label">¿De dónde nos contacta?</label>
+          <select name="lugar" class="form-control">
+            <option value="">Selecciona una opción</option>
+            <option value='Extranjero fuera de M&eacute;xico'>Extranjero fuera de M&eacute;xico</option><option value='Aguascalientes'>Aguascalientes</option><option value='Baja California'>Baja California</option><option value='Baja California Sur'>Baja California Sur</option><option value='Campeche'>Campeche</option><option value='Celaya'>Celaya</option><option value='Chihuahua'>Chihuahua</option><option value='Chiapas'>Chiapas</option><option value='CDMX'>CDMX</option><option value='Coahuila'>Coahuila</option><option value='Colima'>Colima</option><option value='Durango'>Durango</option><option value='Edo. de M&eacute;xico'>Edo. de M&eacute;xico</option><option value='Guerrero'>Guerrero</option><option value='Hidalgo'>Hidalgo</option><option value='Irapuato'>Irapuato</option><option value='Jalisco'>Jalisco</option><option value='Le&oacute;n'>Le&oacute;n</option><option value='Michoac&aacute;n'>Michoac&aacute;n</option><option value='Morelos'>Morelos</option><option value='Nayarit'>Nayarit</option><option value='Monterrey'>Monterrey</option><option value='Oaxaca'>Oaxaca</option><option value='Puebla'>Puebla</option><option value='Quer&eacute;taro'>Quer&eacute;taro</option><option value='Quintana Roo'>Quintana Roo</option><option value='Sinaloa'>Sinaloa</option><option value='San Francisco del Rinc&oacute;n'>San Francisco del Rinc&oacute;n</option><option value='San Luis Potos&iacute;'>San Luis Potos&iacute;</option><option value='Sonora'>Sonora</option><option value='Tabasco'>Tabasco</option><option value='Tamaulipas'>Tamaulipas</option><option value='Tlaxcala'>Tlaxcala</option><option value='Veracruz'>Veracruz</option><option value='Yucat&aacute;n'>Yucat&aacute;n</option><option value='Zacatecas'>Zacatecas</option>
+          </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12">
           <label for="validationCustomUsername" class="form-label">Email</label>
           <div class="input-group has-validation">
             <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
@@ -148,6 +149,7 @@
               </div>
             </div>
           </div>
+          
         <div class="col-12 mb-3">
           <button class="btn btn-primary" type="submit">Enviar</button>
         </div>

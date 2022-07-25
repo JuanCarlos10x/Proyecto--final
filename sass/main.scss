@@ -108,8 +108,12 @@ footer{
 
 //contacto.html
 
-form{
+.form{
     h2{
         @extend %sub;
+    }
+
+    p{
+        @extend %parrafo;
     }
 }
